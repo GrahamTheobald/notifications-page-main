@@ -31,6 +31,7 @@ body {
 .notif {
   padding: 1rem;
   background-color: hsl(0deg, 0%, 100%);
+  max-width: 600px;
 }
 .notif__header {
   display: flex;
@@ -41,6 +42,10 @@ body {
 .notif__header h1 {
   font-size: 1.3rem;
   color: hsl(224deg, 21%, 14%);
+}
+.notif__header h1 span {
+  font-size: 1rem;
+  font-weight: normal;
 }
 .notif__header h1 .header-count {
   color: hsl(0deg, 0%, 100%);
@@ -57,19 +62,28 @@ body {
   align-items: flex-start;
   gap: 0.5rem;
   margin-bottom: 0.5rem;
+  width: 100%;
 }
 .notif__comments__comment .pic {
   width: 3rem;
   border-radius: 50%;
 }
+.notif__comments__comment .text .text-div {
+  display: flex;
+  align-items: center;
+}
 .notif__comments__comment .text .name {
+  margin-right: 0.3rem;
   color: hsl(224deg, 21%, 14%);
   font-weight: bold;
 }
 .notif__comments__comment .text .post {
+  margin-right: 0.3rem;
+  margin-left: 0.3rem;
   font-weight: bold;
 }
 .notif__comments__comment .text .group {
+  margin-left: 0.3rem;
   font-weight: bold;
   color: hsl(219deg, 85%, 26%);
 }
@@ -79,10 +93,30 @@ body {
   margin-top: 0.5rem;
   padding: 1rem;
 }
+.notif__comments__comment .text .message:hover {
+  cursor: pointer;
+  background-color: hsl(211deg, 68%, 94%);
+}
+.notif__comments__comment .unread-icon {
+  background-color: hsl(1deg, 90%, 64%);
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  margin-left: 0.3rem;
+}
 .notif__comments__comment .pic2 {
+  margin-left: auto;
   width: 3rem;
   border-radius: 0.2rem;
-  margin-left: 0.5rem;
+}
+
+.name:hover, .post:hover, .header-button:hover {
+  cursor: pointer;
+  color: hsl(219deg, 85%, 26%);
+}
+
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

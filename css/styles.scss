@@ -44,6 +44,7 @@ body {
 .notif {
     padding: 1rem;
     background-color: $White;
+    max-width: 600px;
     &__header {
         display: flex;
         justify-content: space-between;
@@ -51,6 +52,10 @@ body {
         h1 {
             font-size: 1.3rem;
             color: $VeryDarkBlue;
+            span {
+                font-size: 1rem;
+                font-weight: normal;
+            }
             .header-count {
                 color: $White;
                 background-color: $Blue;
@@ -72,20 +77,29 @@ body {
             align-items: flex-start;
             gap: .5rem;
             margin-bottom: .5rem;
+            width: 100%;
             .pic {
                 width: 3rem;
                 border-radius: 50%;
             }
             .text {
+                .text-div {
+                    display: flex;
+                    align-items: center;
+                }
                 .name {
+                    margin-right: .3rem;
+
                     color: $VeryDarkBlue;
                     font-weight: bold;
                 }
                 .post {
+                    margin-right: .3rem;
+                    margin-left: .3rem;
                     font-weight: bold;
                 }
-
                 .group {
+                    margin-left: .3rem;
                     font-weight: bold;
                     color: $Blue;
                 }
@@ -95,12 +109,31 @@ body {
                     margin-top: .5rem;
                     padding: 1rem;
                 }
+                .message:hover {
+                    cursor: pointer;
+                    background-color: $LightGrayishBlue1;
+                }
+            }
+            .unread-icon {
+                background-color: $Red;
+                width: .5rem;
+                height: .5rem;
+                border-radius: 50%;
+                margin-left: .3rem
             }
             .pic2 {
+                margin-left: auto;
                 width: 3rem;
                 border-radius: .2rem;
-                margin-left: .5rem;
             }
         }
     }
+}
+.name:hover, .post:hover, .header-button:hover {
+    cursor: pointer;
+    color: $Blue;
+}
+
+.hidden {
+    display: none;
 }
