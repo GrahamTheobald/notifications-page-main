@@ -45,6 +45,7 @@ body {
     padding: 1rem;
     background-color: $White;
     max-width: 600px;
+    border-radius: 1rem;
     &__header {
         display: flex;
         justify-content: space-between;
@@ -136,4 +137,11 @@ body {
 
 .hidden {
     display: none;
+}
+
+@media (min-width: 600px) {
+    body {
+    padding: 2rem;
+    }
+    
 }
