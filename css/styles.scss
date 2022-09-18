@@ -1,0 +1,106 @@
+// @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+$Red: hsl(1, 90%, 64%);
+$Blue: hsl(219, 85%, 26%);
+$White: hsl(0, 0%, 100%);
+$VeryLightGrayishBlue: hsl(210, 60%, 98%);
+$LightGrayishBlue1: hsl(211, 68%, 94%);
+$LightGrayishBlue2: hsl(205, 33%, 90%);
+$GrayishBlue: hsl(219, 14%, 63%);
+$DarkGrayishBlue: hsl(219, 12%, 42%);
+$VeryDarkBlue: hsl(224, 21%, 14%);
+
+@font-face {
+    font-family: Plus Jakarta;
+    src: url('../assets/fonts/static/PlusJakartaSans-Medium.ttf') format("truetype");
+    font-weight: normal;  
+}
+@font-face {
+    font-family: Plus Jakarta;
+    src: url('../assets/fonts/static/PlusJakartaSans-ExtraBold.ttf') format("truetype");
+    font-weight: bold;  
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Plus Jakarta;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: $DarkGrayishBlue;
+    background-color: $LightGrayishBlue2;
+}
+
+.notif {
+    padding: 1rem;
+    background-color: $White;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1 {
+            font-size: 1.3rem;
+            color: $VeryDarkBlue;
+            .header-count {
+                color: $White;
+                background-color: $Blue;
+                padding: .1rem .5rem;
+                border-radius: .3rem;
+            }
+            // font-weight: bold;
+        }
+        margin-bottom: 1rem;
+    }
+
+    &__comments {
+        &__comment.unread {
+            background-color: $VeryLightGrayishBlue;
+        }
+        &__comment {
+            padding: 1rem;
+            display: flex;
+            align-items: flex-start;
+            gap: .5rem;
+            margin-bottom: .5rem;
+            .pic {
+                width: 3rem;
+                border-radius: 50%;
+            }
+            .text {
+                .name {
+                    color: $VeryDarkBlue;
+                    font-weight: bold;
+                }
+                .post {
+                    font-weight: bold;
+                }
+
+                .group {
+                    font-weight: bold;
+                    color: $Blue;
+                }
+                .message {
+                    border: 1px solid $LightGrayishBlue2;
+                    border-radius: .5rem;
+                    margin-top: .5rem;
+                    padding: 1rem;
+                }
+            }
+            .pic2 {
+                width: 3rem;
+                border-radius: .2rem;
+                margin-left: .5rem;
+            }
+        }
+    }
+}

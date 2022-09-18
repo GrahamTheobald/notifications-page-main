@@ -1,0 +1,88 @@
+@font-face {
+  font-family: Plus Jakarta;
+  src: url("../assets/fonts/static/PlusJakartaSans-Medium.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: Plus Jakarta;
+  src: url("../assets/fonts/static/PlusJakartaSans-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Plus Jakarta;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: hsl(219deg, 12%, 42%);
+  background-color: hsl(205deg, 33%, 90%);
+}
+
+.notif {
+  padding: 1rem;
+  background-color: hsl(0deg, 0%, 100%);
+}
+.notif__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.notif__header h1 {
+  font-size: 1.3rem;
+  color: hsl(224deg, 21%, 14%);
+}
+.notif__header h1 .header-count {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(219deg, 85%, 26%);
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.3rem;
+}
+.notif__comments__comment.unread {
+  background-color: hsl(210deg, 60%, 98%);
+}
+.notif__comments__comment {
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.notif__comments__comment .pic {
+  width: 3rem;
+  border-radius: 50%;
+}
+.notif__comments__comment .text .name {
+  color: hsl(224deg, 21%, 14%);
+  font-weight: bold;
+}
+.notif__comments__comment .text .post {
+  font-weight: bold;
+}
+.notif__comments__comment .text .group {
+  font-weight: bold;
+  color: hsl(219deg, 85%, 26%);
+}
+.notif__comments__comment .text .message {
+  border: 1px solid hsl(205deg, 33%, 90%);
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 1rem;
+}
+.notif__comments__comment .pic2 {
+  width: 3rem;
+  border-radius: 0.2rem;
+  margin-left: 0.5rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
